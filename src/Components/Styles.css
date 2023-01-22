@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+
+@media (min-width: 738px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+  }
+  
+  
+  body::-webkit-scrollbar {
+    width: 1em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
+  
+  button {
+    font-family: 'Space Mono', monospace;
+    cursor: pointer;
+  }
+  
+  .container .logo {
+    margin-bottom: 100px;
+  }
+  
+  .content {
+    width: 800px;
+    height: 375px;
+    background-color: white;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    border-radius: 20px;
+  }
+  
+  .block {
+    margin: 25px;
+    border-radius: 20px;
+  }
+  
+  .left-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-weight: 500;
+  }
+  
+  .fill {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  
+  }
+  
+  .fill .field {
+    display: flex;
+    padding: 3px 15px;
+    background-color: hsl(189, 41%, 97%);
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .fill .input {
+    font-size: 20px;
+    text-align: end;
+    border: none;
+    background-color: inherit;
+    color: hsl(183, 100%, 15%);
+  }
+  
+  .fill input:focus {
+    outline: none;
+  }
+  
+  .tip .buttons {
+    height: 100px;
+    display: grid;
+    gap: 10px;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+  }
+  
+  .tip button {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(183, 100%, 15%);
+    
+  }
+  
+  .tip button:hover {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+  }
+  
+  .tip .select {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+  }
+  
+  .custom {
+    background-color: hsl(189, 41%, 97%) !important;
+    color: hsl(183, 100%, 15%) !important;
+  }
+  
+  .custom input{
+    width: 100px !important;
+    text-align: center !important;
+    border: none !important;
+    background-color: transparent !important;
+  }
+  
+  .right-col {
+    background-color: hsl(183, 100%, 15%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    justify-content: space-between;
+  }
+  
+  .right-col .upper {
+    width: 100%;
+    display: grid;
+    gap: 30px;
+    color: white;
+    overflow: hidden;
+  }
+  
+  .right-col .lower {
+    display: flex;
+    width: 100%;
+  }
+  
+  .right-col .person {
+    color: hsl(186, 14%, 43%);
+  }
+  
+  .right-col .cash {
+    color: hsl(172, 67%, 45%);
+    width: 150px;
+    font-size: 40px;
+    text-align: end;
+  }
+  
+  .lower button {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .custom input::placeholder, input {
+    color: black;
+    font-family: 'Space Mono', monospace;
+  }
+  
+  .upper .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .grey {
+    opacity: 50%;
+    cursor: not-allowed;
+  }
+  
+  
+}
+
+@media (max-width: 737px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+  }
+  
+  
+  button {
+    font-family: 'Space Mono', monospace;
+    cursor: pointer;
+  }
+  
+  .container .logo {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  
+  .content {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  .block {
+    margin: 20px;
+    border-radius: 20px;
+  }
+  
+  .left-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 10px 0;
+    font-weight: 500;
+  }
+    
+  .fill .field {
+    display: flex;
+    padding: 3px 15px;
+    background-color: hsl(189, 41%, 97%);
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .fill .input {
+    font-size: 20px;
+    text-align: end;
+    border: none;
+    background-color: inherit;
+    color: hsl(183, 100%, 15%);
+  }
+  
+  .fill input:focus {
+    outline: none;
+  }
+  
+  .tip .buttons {
+    /* height: 100px; */
+    display: grid;
+    gap: 10px;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+  }
+  
+  .tip button {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: hsl(183, 100%, 15%);
+    
+  }
+  
+  .tip button:hover {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+  }
+  
+  .tip .select {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+  }
+  
+  .custom {
+    background-color: hsl(189, 41%, 97%) !important;
+    color: hsl(183, 100%, 15%) !important;
+  }
+  
+  .custom input{
+    width: 100px !important;
+    text-align: center !important;
+    border: none !important;
+    background-color: transparent !important;
+  }
+  
+  .right-col {
+    background-color: hsl(183, 100%, 15%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    gap: 30px;
+    margin-bottom: 50px;
+    /* justify-content: space-between; */
+  }
+  
+  .right-col .upper {
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    color: white;
+    overflow: hidden;
+  }
+  
+  .right-col .lower {
+    display: flex;
+    width: 100%;
+  }
+  
+  .right-col .person {
+    color: hsl(186, 14%, 43%);
+  }
+  
+  .right-col .cash {
+    color: hsl(172, 67%, 45%);
+    width: 150px;
+    font-size: 40px;
+    text-align: end;
+  }
+  
+  .lower button {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .custom input::placeholder, input {
+    color: black;
+    font-family: 'Space Mono', monospace;
+  }
+  
+  .upper .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .grey {
+    opacity: 50%;
+    cursor: not-allowed;
+  }
+  
+  .fill {
+    display: grid;
+    gap: 10px;
+  }
+  
+}
